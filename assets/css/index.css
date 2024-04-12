@@ -1,0 +1,21 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  App                                                  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+  --background-dark: rgb(24, 23, 31);
+}
+
+body {
+  background-color: var(--background-dark);
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Component                                            */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
