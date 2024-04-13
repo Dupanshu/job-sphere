@@ -16,3 +16,27 @@ const options ={
     mode: 'cors'
 }
 
+/* fetch(URL, options)
+    .then(response => response.json())
+    .then(json => json.results)
+    .then(utils.print); 
+*/
+
+async function getUsers(endpoint) {
+
+    try {
+        const result = await fetch(endpoint, options);
+
+        if(!result.ok) {
+            throw new Error(`${result.statusText} (${result.status})`);
+        }
+
+        const data = await result.json();
+        utils.print(data.results);
+        //displayUsers(name, picture, city);/* make a function named displayUsers which displays 10 random users */
+    } catch(error) {
+        utils.print(error.message);
+    }
+}
+
+getUsers(URL);
