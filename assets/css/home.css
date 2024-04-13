@@ -186,7 +186,7 @@ input::placeholder {
 /* main column 3 */
 .column3 {
   text-align: center;
-  height: 530px;
+  height: 83dvh;
   width: 280px;
   background-color: var(--grey-login);
   border-radius: 5px;
@@ -229,9 +229,9 @@ input::placeholder {
 
 /* footer */
 .contact {
-  margin-top: calc(100dvh - (52px + 530px + 58px));
   background-color: var(--app-background-white);
   text-align: center;
+  height: 45px;
 }
 
 .box {
