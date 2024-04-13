@@ -28,14 +28,14 @@
 /* grid */
 .grid {
     display: grid;
-    place-items: center;
-    justify-content: space-around;
+    place-items: top;
+    justify-content: space-between;
     gap: 1.2rem;
-    grid-template-columns: repeat();/* justify here */
+    grid-template-columns: repeat(4, 1fr);/* justify here */
 }
 
 .grid-col-span-2 {
-    grid-column: span 1;/* justify column span */
+    grid-column: span 2;/* justify column span */
 }
 
 /* button */

@@ -5,7 +5,7 @@
   --background-dark: rgb(24, 23, 31);
   --app-background-white: #e5e7ef;
   --grey-home:#f2f2f2;
-  --grey-login:#d8d8d8;
+  --grey-login:#fff;
   --header-color: #232f2f;
   --hover-color: #4969ad;
   --logo-color:#2C3F68;
@@ -13,7 +13,12 @@
 }
 
 body {
-  background-color: var(--grey-home);
+  background-color: #F4F2EE;
+}
+
+main {
+  height: 100dvh;
+  overflow: hidden;
 }
 
 .container {
@@ -38,6 +43,14 @@ header {
   border-radius: 3px;
 }
 
+.bar {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 0px 10px;
+}
+
 /* nav */
 nav {
   padding: 10px;
@@ -47,6 +60,8 @@ nav {
 
 nav ul li {
   margin-left: 20px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 nav ul li i {
@@ -59,34 +74,80 @@ nav ul li i {
   cursor: pointer;
 }
 
-nav ul li i:hover {
+nav ul li:hover {
   color: var(--hover-color);
 }
 
 /* columns */
-.columns {
-  width: 100%;
+.column {
+  margin-top: 20px;
+}
+/* main columns 1*/
+.column1 {
+  text-align: center;
+  height: 300px;
+  width: 220px;
+  outline: solid #000;
+  border-radius: 5px;
+  background-color: var(--grey-login);
 }
 
-/* main columns 1*/
+.clm1-bg {
+  background-image: url('../img/bg-clm1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px;
+  height: 60px;
+  width: 220px;
+  position: relative;
+}
+
+.clm1-img {
+  position: absolute;
+  translate: 60px 10px;
+  background-image: url('../img/profile-pic.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.clm1-des {
+  margin-top: 55px;
+}
 
 /* main column 2 */
-
-/* main column 3 */
-
-.column-3 {
+.column2 {
   text-align: center;
+  height: 35px;
+  width: 500px;
+  outline: solid #000;
+  background-color: var(--grey-login);
+  border-radius: 5px;
 }
 
-.column-3 p {
+/* main column 3 */
+.column3 {
+  text-align: center;
+  height: 550px;
+  width: 270px;
+  outline: solid #000;
+  background-color: var(--grey-login);
+  border-radius: 5px;
+}
+
+.column3 p {
   font-size: 20px;
   font-weight: 500;
   padding: 20px 0px;
+  text-decoration: underline;
 }
 
 /* footer */
 .contact {
-  margin-top: calc(100svh - (52px + 40px));
   background-color: var(--app-background-white);
   text-align: center;
 }
