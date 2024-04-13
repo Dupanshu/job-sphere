@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');/* PT Sans: font-family: "PT Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/*--------------------------*/
+/*Utils                     */
+/*--------------------------*/
+
+:root {
+    --background-dark: rgb(24, 23, 31);
+    --header-footer-color: #1A2737;
+    --w3school-color1: #1D2A35;
+    --w3school-color2: #15202B;
+    --w3school-color3: #282A35;
+    --cool-blue-color-ibm: #EDF5FF;
+    --app-background-white: #e5e7ef;
+    --header-color: #232f2f;
+    --hover-color: #89A6D7;
+}
+
+/* flex */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* grid */
+.grid {
+    display: grid;
+    place-items: center;
+    justify-content: space-around;
+    gap: 1.2rem;
+    grid-template-columns: repeat();/* justify here */
+}
+
+.grid-col-span-2 {
+    grid-column: span 1;/* justify column span */
+}
+
+/* button */
+button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    align-items: center;
+}
+/* line break btwn elements */
+hr {
+    margin: 40px 0;
+}
+
+
+
