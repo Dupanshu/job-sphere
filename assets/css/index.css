@@ -10,6 +10,7 @@
   --hover-color: #89A6D7;
   --logo-color:#2C3F68;
   --logo-color-2:#4969ad;
+  --placeholder-color: #c2d1ea;
 }
 
 body {
@@ -21,5 +22,76 @@ body {
   margin-inline: auto;
 }
 
-/* Component */
+/* img */
+.bg-img {
+  background: url('../img/login-side-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  inset: 0px auto auto 0px;
+  position: fixed;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.bg-img p {
+  font-size: 40px;
+  margin: 40% 20%;
+}
+
+/* login section */
+.login-sec {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 55%;
+}
+
+.login-sec .welcome {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 0px;
+}
+
+input[type=text] {
+  width: 250px;
+  height: 50px;
+  background-color: var(--placeholder-color);
+  border-radius: 5px;
+  font-size: 15px;
+  color: #000;
+  text-align: left;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+input[type=text] + input[type=text] {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.message {
+  color: red !important;
+  visibility: hidden;
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+.login {
+  background-color: var(--logo-color-2);
+  padding: 6.5px;
+}
+
+.register {
+  outline: solid var(--logo-color-2);
+}
+
+.login:hover, .register:hover {
+  text-decoration: underline;
+}
 

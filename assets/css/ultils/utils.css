@@ -40,13 +40,18 @@
 
 /* button */
 button {
-    padding: 10px;
+    padding: 5px;
     width: 100px;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
     align-items: center;
 }
 /* line break btwn elements */
+
+button + button {
+    margin-left: 10px;
+}
+
 hr {
     margin: 40px 0;
 }

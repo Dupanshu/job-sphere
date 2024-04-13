@@ -2,16 +2,16 @@
 - Job Finder Website clone
 - This website uses fetch API to fetch random users on the page.
 
-Login Id: 
-Password: 
+Username: user
+Password: jobfinder
 
 Click [here]() to go to the website and 
 track your vehicle location.
 
 ### It looks like this
-    This is Login page. 
-![Login]()
+    This is the Login page. 
+![Login](./assets/img/login.png)
 ##
-    This is Home page
-![Home]()
+    This is the Home page
+![Home](./assets/img/home.png)
 

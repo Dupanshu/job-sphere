@@ -8,14 +8,24 @@
     <meta name="keywords" content="html, css,APIs, javascript">
     <title>Login | Jobsphere</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/index.css">
     <script src="./assets/js/app.js" type="module"></script>
   </head>
   <body>
     <main>
-      <div class="container">
-
+      <div class="flex">
+        <div class="bg-img">
+          <p>Jobsphere</p>
+        </div>
+        <div class="login-sec container">
+          <p class="welcome">Welcome</p>
+          <input type='text' placeholder='Username' class='username'>
+          <input type='text' placeholder='Password' class='password'>
+          <div class="message"><p>Incorrect username or password!</p></div>
+          <button class="login">Login</button>
+          <button class="register">Sign up</button>
+        </div>
       </div>
     </main>
   </body>
