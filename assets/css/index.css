@@ -8,9 +8,9 @@
   --grey-login:#d8d8d8;
   --header-color: #232f2f;
   --hover-color: #89A6D7;
-  --logo-color:#2C3F68;
-  --logo-color-2:#4969ad;
-  --placeholder-color: #c2d1ea;
+  --logo-color:#130B68;
+  --logo-color-2:#43619f;
+  --placeholder-color: #d1dcef;
 }
 
 body {
@@ -62,13 +62,14 @@ input[type=text] {
   background-color: var(--placeholder-color);
   border-radius: 5px;
   font-size: 15px;
+  font-weight: 500;
   color: #000;
   text-align: left;
   padding: 10px;
 }
 
 input::placeholder {
-  color: #000;
+  color: var(--logo-color-2);
 }
 
 input[type=text] + input[type=text] {
@@ -108,7 +109,7 @@ input[type=text] + input[type=text] {
 }
 
 .blue {
-  color: #0000ed;
+  color: var(--logo-color);
   cursor: pointer;
 }
 

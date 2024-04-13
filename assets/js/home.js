@@ -7,6 +7,8 @@ import * as utils from './utils.js';
 utils.print('home.js');
 
 const URL = 'https://randomuser.me/api/?nat=CA&results=10';
+const columnThree = utils.select('.column3');
+
 
 const options ={
     method: 'GET',
@@ -32,11 +34,38 @@ async function getUsers(endpoint) {
         }
 
         const data = await result.json();
-        utils.print(data.results);
-        //displayUsers(name, picture, city);/* make a function named displayUsers which displays 10 random users */
+
+        for (let i = 0; i < data.results.length; i++) {
+            let profilePic = `${data.results[i].picture.medium}`;
+            let fullName = `${data.results[i].name.first} ${data.results[i].name.last}`;
+            let residence = `${data.results[i].location.city}`;
+
+            displayUser(profilePic, fullName, residence);/* make a function named displayUsers 
+        which displays 10 random users */
+        };
+        //utils.print(data.results);
     } catch(error) {
         utils.print(error.message);
     }
 }
 
+//getUsers(URL);
+
+function displayUser(profilePic, fullName, residence) {
+
+    const div = utils.create('div');
+
+    div.classList.add('users');
+    div.innerHTML = 
+        `<div class='user-img' style='background-image:url(${profilePic})'></div>` +
+         `<div class='user-info'>` + 
+            `<div class='user-name'>${fullName}</div>` + 
+            `<div class='user-city'>${residence}</div>` +
+          `</div>`;
+
+          columnThree.appendChild(div);
+};
+
+
 getUsers(URL);
+

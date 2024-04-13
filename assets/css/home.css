@@ -7,9 +7,9 @@
   --grey-home:#f2f2f2;
   --grey-login:#fff;
   --header-color: #232f2f;
-  --hover-color: #3828e8;
-  --logo-color:#130B68;
-  --logo-color-2:#4969ad;
+  --hover-color: #38383b;
+  --logo-color-2:#130B68;
+  --logo-color:#43619f;
 }
 
 body {
@@ -61,6 +61,10 @@ nav ul li {
   color: var(--logo-color);
 }
 
+.home i, .home{
+  color: var(--hover-color);
+}
+
 nav ul li i {
   font-size: 20px;
   text-decoration: none;
@@ -84,7 +88,6 @@ nav ul li i:hover, nav ul li:hover {
   text-align: center;
   height: 300px;
   width: 220px;
-  outline: solid #000;
   border-radius: 5px;
   background-color: var(--grey-login);
 }
@@ -94,7 +97,7 @@ nav ul li i:hover, nav ul li:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 0px;
+  border-radius: 5px;
   height: 60px;
   width: 220px;
   position: relative;
@@ -140,7 +143,6 @@ nav ul li i:hover, nav ul li:hover {
   text-align: center;
   height: 130px;
   width: 520px;
-  outline: solid #000;
   background-color: var(--grey-login);
   border-radius: 5px;
 }
@@ -186,9 +188,9 @@ input::placeholder {
   text-align: center;
   height: 530px;
   width: 280px;
-  outline: solid #000;
   background-color: var(--grey-login);
   border-radius: 5px;
+  overflow: scroll;
 }
 
 .column3 p {
@@ -197,6 +199,32 @@ input::placeholder {
   padding: 20px 0px;
   text-decoration: underline;
   color: var(--logo-color);
+}
+
+.users {
+  border-top: 1px solid #778899;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.user-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.user-name {
+  letter-spacing: 1.2px;
+}
+
+.user-city {
+  color: var(--logo-color-2);
+  letter-spacing: 1.2px;
 }
 
 /* footer */
@@ -237,5 +265,4 @@ input::placeholder {
   position: relative;
   bottom: 0;
 }
-
 
