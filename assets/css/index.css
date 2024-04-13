@@ -4,8 +4,8 @@
 :root {
   --background-dark: rgb(24, 23, 31);
   --app-background-white: #e5e7ef;
-  --grey-login:#f2f2f2;
-  --grey-home:#d8d8d8;
+  --grey-home:#f2f2f2;
+  --grey-login:#d8d8d8;
   --header-color: #232f2f;
   --hover-color: #89A6D7;
   --logo-color:#2C3F68;
@@ -38,15 +38,16 @@ body {
 .bg-img p {
   font-size: 40px;
   margin: 40% 20%;
+  font-weight: 600;
 }
 
 /* login section */
 .login-sec {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 100%;
   transform: translate(-50%, -50%);
-  margin-left: 55%;
+  /* margin-left: 55%; */
 }
 
 .login-sec .welcome {
@@ -56,7 +57,7 @@ body {
 }
 
 input[type=text] {
-  width: 250px;
+  width: 300px;
   height: 50px;
   background-color: var(--placeholder-color);
   border-radius: 5px;
@@ -84,7 +85,7 @@ input[type=text] + input[type=text] {
 
 .login {
   background-color: var(--logo-color-2);
-  padding: 6.5px;
+  padding: 10.5px;
 }
 
 .register {
@@ -93,5 +94,21 @@ input[type=text] + input[type=text] {
 
 .login:hover, .register:hover {
   text-decoration: underline;
+}
+
+/* bottom */
+
+.bottom {
+  position: fixed;
+  top: 80%;
+  right: 150px;
+  transform: translate(-50%, -50%);
+  /* outline: solid #000; */
+  width: 30ch;
+}
+
+.blue {
+  color: #0000ed;
+  cursor: pointer;
 }
 

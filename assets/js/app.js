@@ -28,3 +28,17 @@ utils.listen('click', login, () => {
   };
 });
 
+utils.listen('keydown', username, () => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    password.focus();
+  }
+});
+
+utils.listen('keydown', password, () => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    login.click();
+  }
+});
+

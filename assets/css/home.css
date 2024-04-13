@@ -4,10 +4,10 @@
 :root {
   --background-dark: rgb(24, 23, 31);
   --app-background-white: #e5e7ef;
-  --grey-login:#f2f2f2;
-  --grey-home:#d8d8d8;
+  --grey-home:#f2f2f2;
+  --grey-login:#d8d8d8;
   --header-color: #232f2f;
-  --hover-color: #89A6D7;
+  --hover-color: #4969ad;
   --logo-color:#2C3F68;
   --logo-color-2:#4969ad;
 }
@@ -21,5 +21,106 @@ body {
   margin-inline: auto;
 }
 
-/* Component */
+header {
+  background-color: #fff;
+  min-width: 100%;
+  height: 52px;
+}
+
+/* logo */
+.logo {
+  background-image: url(../img/logo.png);
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+}
+
+/* nav */
+nav {
+  padding: 10px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li i {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+  color: var(--logo-color);
+  letter-spacing: 0.2px;
+  transition: color 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+nav ul li i:hover {
+  color: var(--hover-color);
+}
+
+/* columns */
+.columns {
+  width: 100%;
+}
+
+/* main columns 1*/
+
+/* main column 2 */
+
+/* main column 3 */
+
+.column-3 {
+  text-align: center;
+}
+
+.column-3 p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+
+/* footer */
+.contact {
+  margin-top: calc(100svh - (52px + 40px));
+  background-color: var(--app-background-white);
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  text-align: center;
+}
+
+.box .icon {
+  color: var(--logo-color);
+  align-items: center;
+}
+
+.box .icon a {
+  color: var(--logo-color);
+  font-size: 25px;
+  transition: color 0.25s ease-in-out;
+}
+
+.box .icon a:hover {
+  color: var(--hover-color);
+}
+
+.icon i {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--app-background-white);
+  color: #000;
+  position: relative;
+  bottom: 0;
+}
+
 
