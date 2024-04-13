@@ -7,18 +7,13 @@
   --grey-home:#f2f2f2;
   --grey-login:#fff;
   --header-color: #232f2f;
-  --hover-color: #4969ad;
-  --logo-color:#2C3F68;
+  --hover-color: #3828e8;
+  --logo-color:#130B68;
   --logo-color-2:#4969ad;
 }
 
 body {
   background-color: #F4F2EE;
-}
-
-main {
-  height: 100dvh;
-  overflow: hidden;
 }
 
 .container {
@@ -59,9 +54,11 @@ nav {
 }
 
 nav ul li {
+  font-size: 15px;
   margin-left: 20px;
   cursor: pointer;
   font-weight: 500;
+  color: var(--logo-color);
 }
 
 nav ul li i {
@@ -74,7 +71,7 @@ nav ul li i {
   cursor: pointer;
 }
 
-nav ul li:hover {
+nav ul li i:hover, nav ul li:hover {
   color: var(--hover-color);
 }
 
@@ -119,21 +116,76 @@ nav ul li:hover {
   margin-top: 55px;
 }
 
+.under {
+  color: #858585;
+  width: 20ch;
+  margin-left: 25px;
+}
+
+.under-un {
+  color: #2d2d2d;
+}
+
+.under-un span {
+  margin-left: 50px;
+}
+
+.under-un .hi {
+  margin-left: 75px;
+}
+
 /* main column 2 */
 .column2 {
+  padding: 10px;
   text-align: center;
-  height: 35px;
-  width: 500px;
+  height: 130px;
+  width: 520px;
   outline: solid #000;
   background-color: var(--grey-login);
   border-radius: 5px;
 }
 
+.clm2-img {
+  background-image: url('../img/profile-pic.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+input[type=text] {
+  width: 420px;
+  height: auto;
+  background-color: var(--placeholder-color);
+  border-radius: 50px;
+  font-size: 15px;
+  color: #000;
+  border: 1px solid #000;
+  text-align: left;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+.media {
+  padding: 10px 30px;
+}
+
+.media i {
+  color: var(--logo-color-2);
+  cursor: pointer;
+}
+
 /* main column 3 */
 .column3 {
   text-align: center;
-  height: 550px;
-  width: 270px;
+  height: 530px;
+  width: 280px;
   outline: solid #000;
   background-color: var(--grey-login);
   border-radius: 5px;
@@ -144,10 +196,12 @@ nav ul li:hover {
   font-weight: 500;
   padding: 20px 0px;
   text-decoration: underline;
+  color: var(--logo-color);
 }
 
 /* footer */
 .contact {
+  margin-top: calc(100dvh - (52px + 530px + 58px));
   background-color: var(--app-background-white);
   text-align: center;
 }
