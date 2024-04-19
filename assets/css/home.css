@@ -40,11 +40,20 @@ header {
 }
 
 .bar {
-  width: 200px;
-  height: 30px;
+  background-color: #EDF3F8;
   border-radius: 10px;
-  border: 2px solid #000;
+  translate: -100px 0;
+}
+
+.bar input{
+  width: 300px;
+  height: 30px;
+  background-color: #EDF3F8;
   padding: 0px 10px;
+}
+
+.bar i {
+  padding: 10px;
 }
 
 /* nav */
@@ -54,30 +63,46 @@ nav {
   margin-right: 20px;
 }
 
-nav ul li {
-  font-size: 15px;
-  margin-left: 20px;
+nav ul li p {
+  font-size: 12px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 100;
   color: var(--logo-color);
+  margin-top: 5px;
+  font-family: sans-serif;
 }
 
-.home i, .home{
+.home {
   color: var(--hover-color);
 }
 
 nav ul li i {
-  font-size: 20px;
+  font-size: 19px;
   text-decoration: none;
   font-weight: 100;
   color: var(--logo-color);
   letter-spacing: 0.2px;
   transition: color 0.25s ease-in-out;
   cursor: pointer;
+  margin-left: 60px;
+  translate: -50px 0;
+  text-align: center;
 }
 
-nav ul li i:hover/* , nav ul li:hover */ {
+nav ul li i:hover, nav li p:hover {
   color: var(--hover-color);
+}
+
+.profile {
+  background-image: url('../img/profile-pic.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid var(--logo-color-2);
+  margin-right: 5px;
 }
 
 /* columns */
@@ -143,7 +168,7 @@ nav ul li i:hover/* , nav ul li:hover */ {
 .column2 {
   padding: 10px;
   text-align: center;
-  height: 130px;
+  height: 140px;
   width: 520px;
   background-color: var(--grey-login);
   border-radius: 5px;
@@ -158,6 +183,7 @@ nav ul li i:hover/* , nav ul li:hover */ {
   border-radius: 50px;
   height: 50px;
   width: 50px;
+  border: 2px solid var(--logo-color-2);
 }
 
 input[type=text] {
@@ -183,6 +209,14 @@ input::placeholder {
 
 .media div {
   cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.media div:hover {
+  background-color: #F3F3F3;
 }
 
 .media i {
@@ -192,7 +226,7 @@ input::placeholder {
 /* main column 3 */
 .column3 {
   text-align: center;
-  height: 83dvh;
+  height: calc(100dvh - 117px);
   width: 280px;
   background-color: var(--grey-login);
   border-radius: 5px;
