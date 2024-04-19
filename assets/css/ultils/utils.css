@@ -45,16 +45,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
+    box-shadow: 5px 10px 10px 0 #b2b2b2;
 }
-/* line break btwn elements */
 
 button + button {
     margin-left: 10px;
 }
 
+/* line break btwn elements */
 hr {
     margin: 10px 0;
 }
-
-
 
