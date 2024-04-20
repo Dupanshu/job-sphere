@@ -7,7 +7,7 @@ import * as utils from './utils.js';
 utils.print('home.js');
 
 const URL = 'https://randomuser.me/api/?nat=CA&results=10';
-const columnThree = utils.select('.column3');
+const columnThree = utils.select('.people');
 
 
 const options ={

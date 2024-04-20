@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #F4F2EE;
+  background-color: #f9f9f9;
 }
 
 .container {
@@ -82,7 +82,6 @@ nav ul li i {
   font-weight: 100;
   color: var(--logo-color);
   letter-spacing: 0.2px;
-  transition: color 0.25s ease-in-out;
   cursor: pointer;
   margin-left: 60px;
   translate: -50px 0;
@@ -91,6 +90,7 @@ nav ul li i {
 
 nav ul li i:hover, nav li p:hover {
   color: var(--hover-color);
+  transition: color 250ms ease-in-out;
 }
 
 .profile {
@@ -115,7 +115,7 @@ nav ul li i:hover, nav li p:hover {
   height: 300px;
   width: 220px;
   border-radius: 5px;
-  background-color: var(--grey-login);
+  background-color: #f5f5f5;
   box-shadow: 0.5px 1px 4px 0 #b2b2b2;
 }
 
@@ -170,7 +170,7 @@ nav ul li i:hover, nav li p:hover {
   text-align: center;
   height: 140px;
   width: 520px;
-  background-color: var(--grey-login);
+  background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0.5px 1px 4px 0 #b2b2b2;
 }
@@ -216,7 +216,8 @@ input::placeholder {
 }
 
 .media div:hover {
-  background-color: #F3F3F3;
+  background-color: #e5e5e5;
+  transition: background-color 250ms ease-in-out;
 }
 
 .media i {
@@ -226,22 +227,27 @@ input::placeholder {
 /* main column 3 */
 .column3 {
   text-align: center;
-  height: calc(100dvh - 117px);
-  width: 280px;
-  background-color: var(--grey-login);
+  width: 300px;
   border-radius: 5px;
-  overflow: scroll;
   box-shadow: 0.5px 0px 4px 0 #b2b2b2;
+  background-color: #f5f5f5;
+}
+
+.people {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: calc(100dvh - 186px);
 }
 
 .column3 p {
   text-align: left;
-  margin: 0px 10px;
   font-size: 18px;
   font-weight: 500;
-  padding: 20px 0px;
+  padding: 20px 10px;
   /* text-decoration: underline; */
   color: #696B6E;
+  border-bottom: 2px solid #000;
+  width: 100%;
 }
 
 .users {
@@ -250,8 +256,13 @@ input::placeholder {
   justify-content: space-between;
   padding: 15px 20px;
   cursor: pointer;
+  background-color: #eee;
 }
 
+.users:hover {
+  background-color: #e5e7ef;
+  transition: background-color ease-in-out 200ms;
+}
 .user-img {
   background-position: center center;
   background-repeat: no-repeat;
@@ -272,7 +283,7 @@ input::placeholder {
 
 /* footer */
 .contact {
-  background-color: var(--app-background-white);
+  background-color: #eee;
   text-align: center;
   height: 45px;
   box-shadow: 0.5px 2px 4px 2px #b2b2b2;
@@ -304,7 +315,6 @@ input::placeholder {
 }
 
 .footer {
-  background-color: var(--app-background-white);
   color: #000;
   position: relative;
   bottom: 0;
