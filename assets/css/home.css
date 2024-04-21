@@ -253,8 +253,7 @@ input::placeholder {
   font-size: 18px;
   font-weight: 500;
   padding: 20px 10px;
-  /* text-decoration: underline; */
-  color: #696B6E;
+  color: var(--logo-color-2);
   border-bottom: 2px solid #000;
   width: 100%;
 }
@@ -272,6 +271,11 @@ input::placeholder {
   background-color: #e5e7ef;
   transition: background-color ease-in-out 200ms;
 }
+
+.users:first-child {
+  border-style: none;
+}
+
 .user-img {
   background-position: center center;
   background-repeat: no-repeat;
