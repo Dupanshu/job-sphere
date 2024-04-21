@@ -21,10 +21,6 @@ body {
   margin-inline: auto;
 }
 
-* {
-  scrollbar-color: var(--logo-color) #fff;
-}
-
 header {
   background-color: #fff;
   min-width: 100%;
@@ -246,6 +242,9 @@ input::placeholder {
 .people {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  scrollbar-color: var(--logo-color) #fff;/* if some broser shows scroll then 
+  the color will be applied maybe */
   height: calc(100dvh - 186px);
 }
 
