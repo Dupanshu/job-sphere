@@ -152,6 +152,11 @@ nav ul li:hover p{
   margin-top: 55px;
 }
 
+.clm1-des .p-name {
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .under {
   color: #858585;
   width: 20ch;
