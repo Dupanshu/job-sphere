@@ -30,26 +30,12 @@
     display: grid;
     place-items: top;
     justify-content: space-between;
-    gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);/* justify here */
+    /* gap: 1.5rem; */
+    grid-template-columns: repeat(3, 1fr);/* justify here */
 }
 
 .grid-col-span-2 {
     grid-column: span 2;/* justify column span */
-}
-
-/* button */
-button {
-    padding: 10px;
-    width: 100px;
-    border-radius: 5px;
-    cursor: pointer;
-    align-items: center;
-    box-shadow: 5px 10px 10px 0 #b2b2b2;
-}
-
-button + button {
-    margin-left: 10px;
 }
 
 /* line break btwn elements */

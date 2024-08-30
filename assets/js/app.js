@@ -8,7 +8,7 @@ import * as utils from './utils.js';
 utils.print('app.js');
 
 localStorage.setItem('username', 'user');
-localStorage.setItem('password', 'jobfinder');
+localStorage.setItem('password', 'password');
 
 const username = utils.select('.username');
 const password = utils.select('.password');

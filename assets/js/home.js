@@ -57,11 +57,15 @@ function displayUser(profilePic, fullName, residence) {
 
     div.classList.add('users');
     div.innerHTML = 
-        `<div class='user-img' style='background-image:url(${profilePic})'></div>` +
-         `<div class='user-info'>` + 
+        `<div class="user_part">` +
+          `<div class='user-img' style='background-image:url(${profilePic})'></div>` +
+          `<div class='user-info'>` + 
             `<div class='user-name'>${fullName}</div>` + 
-            `<div class='user-city'>${residence}</div>` +
-          `</div>`;
+            `<div class='user-city'>` +
+            `<i class="fa-solid fa-map-pin"></i>${residence}</div>` +
+          `</div>` +
+        `</div>` +
+        `<i class="fa-solid fa-circle-plus"></i>`;
 
           columnThree.appendChild(div);
 };
