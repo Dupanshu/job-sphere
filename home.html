@@ -13,23 +13,23 @@
     <script src="./assets/js/home.js" type="module"></script>
   </head>
   <body>
-    <main>
-      <header class="flex">
-        <div class="container">
-          <div class="flex">
-            <div class="logo"></div>
-            <div class="bar"><i class="fa-solid fa-magnifying-glass"></i><input type="search"></div>
-            <nav>
-              <ul class="flex">
-                <li><i class="fa-solid fa-house home"><p class="home"> Home</p></i></li>
-                <li><i class="fa-solid fa-message"><p> Messaging</p></i></li>
-                <li><i class="fa-solid fa-bell"><p> Notfications</p></i></li>
-                <li><div class="profile"></div></li>
-              </ul>
-            </nav>
-          </div>
+    <header class="flex">
+      <div class="container">
+        <div class="flex">
+          <div class="logo"></div>
+          <div class="bar"><i class="fa-solid fa-magnifying-glass"></i><input type="search"></div>
+          <nav>
+            <ul class="flex">
+              <li><i class="fa-solid fa-house home"><p class="home"> Home</p></i></li>
+              <li><i class="fa-solid fa-message"><p> Messaging</p></i></li>
+              <li><i class="fa-solid fa-bell"><p> Notfications</p></i></li>
+              <li><div class="profile"></div></li>
+            </ul>
+          </nav>
         </div>
-      </header>
+      </div>
+    </header>
+    <main>
       <div class="column flex container">
         <div class="column1 flex">
           <div class="clm1-bg">
@@ -57,23 +57,55 @@
         </div>
         <div class="column3">
           <p>People you may know</p>
-          <div class="people"></div>
+          <div class="people_scroll">
+            <div class="people"></div>
+          </div>
         </div>
       </div>
     </main>
-    <section class="contact flex" id="contact">
+    <footer class="contact" id="contact">
       <div class="box container">
-        <div class="icon flex">
-          <div class="flex">
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="footer_top">
+          <div class="footer_logo">
+            <img src="./assets/img/logo.png" alt="logo">
+            <h2>Jobsphere</h2>
           </div>
-          <div class="footer">&copy; 2024 Jobsphere | Thanks for visiting.</div class="footer">
+          <div>
+            <h3>Company</h3>
+            <p>Solutions for Marketing</p>
+            <p>Solutions for Sales</p>
+            <p>PRicing Plans</p>
+            <p>Contact Sales</p>
+          </div>
+          <div>
+            <h3>Integration</h3>
+            <p>Use Cases</p>
+            <p>API Docs</p>
+            <p>Integration</p>
+            <p>Examples</p>
+          </div>
+          <div>
+            <h3>Resources</h3>
+            <p>Docs</p>
+            <p>Blog</p>
+            <p>Github Repository</p>
+          </div>
+        </div>
+        <div class="icon flex">
+          <div class="footer_links">
+            <p>&copy; 2024 Jobsphere Inc.</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookies Settings</p>
+          </div>
+          <div class="flex">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
