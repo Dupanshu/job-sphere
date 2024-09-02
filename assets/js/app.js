@@ -28,14 +28,14 @@ utils.listen('click', login, () => {
   };
 });
 
-utils.listen('keydown', username, () => {
+utils.listen('keydown', username, (event) => {
   if (event.key === 'Enter') {
     event.preventDefault();
     password.focus();
   }
 });
 
-utils.listen('keydown', password, () => {
+utils.listen('keydown', password, (event) => {
   if (event.key === 'Enter') {
     event.preventDefault();
     login.click();
