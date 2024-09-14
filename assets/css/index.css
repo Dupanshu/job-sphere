@@ -38,7 +38,7 @@ main {
   background-size: cover;
   height: 100vh;
   inset: 0px auto auto 0px;
-  width: 50%;
+  width: 45%;
   display: grid;
   place-items: center;
 }
@@ -46,20 +46,23 @@ main {
 .bg-img .bg-img-flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: rgba(255 255 255 / 30%);
+  padding: 0px 10px;
+  border-radius: 6px;
 }
 
 .bg-img h1 {
   margin-left: 16px;
   display: inline-block;
-  color: #fff;
+  color: #130B68;
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 /* login section */
 .login-sec {
-  width: 50%;
+  width: 55%;
   display: grid;
   place-items: center;
 }
